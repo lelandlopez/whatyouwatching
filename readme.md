@@ -23,8 +23,9 @@ php artisan migrate:refresh --seed
 
 ## Built With
 
-*Lavarel 5.2
-*Bootstrap 3.3.6
+* Dropwizard - Bla bla bla
+* Maven - Maybe
+* Atom - ergaerga
 
 ## Authors
 
