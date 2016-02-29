@@ -14,7 +14,7 @@ Change .env to match server credentials.
 
 Change config/database to match server credentials.
 
-Mysql database to store tables.
+Create Mysql database to store tables.
 
 Migrate tables
 ```
@@ -23,9 +23,8 @@ php artisan migrate:refresh --seed
 
 ## Built With
 
-* Dropwizard - Bla bla bla
-* Maven - Maybe
-* Atom - ergaerga
+* Lavarel 5.2
+* Bootstrap 3.3.6
 
 ## Authors
 
