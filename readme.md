@@ -9,9 +9,13 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisities
 
 Download to Server.
+
 Change .env to match server credentials.
+
 Change config/database to match server credentials.
+
 Mysql database to store tables.
+
 Migrate tables
 ```
 php artisan migrate:refresh --seed
@@ -19,8 +23,8 @@ php artisan migrate:refresh --seed
 
 ## Built With
 
-Lavarel 5.2
-Bootstrap 3.3.6
+*Lavarel 5.2
+*Bootstrap 3.3.6
 
 ## Authors
 
