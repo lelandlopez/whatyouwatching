@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -29,4 +24,31 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
     //
+
+	Route::get('/', function () {
+		return view('home'); 
+	});
+
+
+	Route::get('/findashow', function () {
+		return view('findashow'); 
+	});
+
+
+	Route::get('/getShow', function () {
+		return "asdf";
+	});
+
+	Route::get('/login', function () {
+		return view('login');
+	});
+
+    Route::post('/login', 'auth\AuthController@postLogin');
+    Route::get('/logout', 'auth\AuthController@getLogout');
+    Route::get('/register', 'WhatYouWatchingController@getRegister');
+    Route::post('/register', 'WhatYouWatchingController@postRegister');
+
+    Route::get('/profile', 'WhatYouWatchingController@getProfile');
+    Route::get('/addnewshowdate', 'WhatYouWatchingController@getAddNewShowDate');
+
 });
